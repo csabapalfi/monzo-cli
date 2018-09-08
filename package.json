@@ -1,0 +1,24 @@
+{
+  "name": "monzo-cli",
+  "description": "Simple command line interface for Monzo",
+  "version": "0.1.0",
+  "author": {
+    "name": "Csaba Palfi",
+    "url": "https://csabapalfi.github.io"
+  },
+  "bin": {
+    "monzo": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csabapalfi/monzo-cli.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csabapalfi/monzo-cli/issues"
+  },
+  "dependencies": {
+    "oauth-cli": "^0.1.0",
+    "request": "^2.88.0"
+  }
+}
