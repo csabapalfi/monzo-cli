@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 const { writeFileSync } = require('fs');
 const request = require('request');
 const localOauth = require('oauth-cli');
 
-const [,,path, credentialsFile = '~/.monzo.json'] = process.argv;
+const [,,path, credentialsPath] = process.argv;
 
 const baseUrl = 'https://api.monzo.com/'
 
@@ -20,6 +22,10 @@ const options = {
         secret: process.env.MONZO_CLIENT_SECRET,
     },
 }
+
+const credentialsFile = credentialsPath ?
+    `${process.cwd()}/${credentialsPath}` :
+    `${process.env.HOME}/.monzo.json`;
 
 function getCredentials(file, callback) {
     const oldCredentials = require(file);
