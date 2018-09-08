@@ -1,7 +1,7 @@
 {
   "name": "monzo-cli",
   "description": "Simple command line interface for Monzo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Csaba Palfi",
     "url": "https://csabapalfi.github.io"
